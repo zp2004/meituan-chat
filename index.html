@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>美团外卖聊天界面</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">与骑手沟通中</div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="typing-indicator" id="typing-indicator" style="display:none;">骑手正在输入...</div>
+    <div class="chat-input">
+      <input type="text" id="message-input" placeholder="请输入消息..." />
+      <input type="file" id="image-input" accept="image/*" style="display:none;" />
+      <button onclick="sendMessage()">发送</button>
+      <button onclick="chooseImage()">+</button>
+    </div>
+  </div>
+
+  <audio id="send-sound" src="https://cdn.pixabay.com/audio/2021/08/04/audio_0ba2efc9b4.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
